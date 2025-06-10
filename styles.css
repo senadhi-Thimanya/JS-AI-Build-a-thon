@@ -1,0 +1,86 @@
+/* General Reset */
+body, h1, h2, h3, p {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+body {
+  background-color: #f9f9f9;
+  line-height: 1.6;
+  padding: 0 20px;
+}
+
+header {
+  background: #6bb8a9;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+header h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+main {
+  margin: 20px 0;
+}
+
+.category {
+  margin-top: 30px;
+}
+
+.category h2 {
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+  color: #444;
+}
+
+.category p {
+  text-align: center;
+  margin: 10px 0 20px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.products-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 250px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.product img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  background-color: #e0e0e0;
+}
+
+.product h3 {
+  font-size: 1.2em;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 1.1em;
+  color: #333;
+  font-weight: bold;
+}
