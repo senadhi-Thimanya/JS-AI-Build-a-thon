@@ -4,9 +4,9 @@ import dotenv from "dotenv";
 dotenv.config();
 
 export async function main() {
-  // Load from .env file only, do not expose keys in code
-  const endpoint = process.env["AZURE_INFERENCE_SDK_ENDPOINT"];
-  const apiKey = process.env["AZURE_INFERENCE_SDK_KEY"];
+  // You will need to set these environment variables or edit the following values
+  const endpoint = process.env["AZURE_OPENAI_ENDPOINT"] || "https://senad-mc4heqva-eastus2.openai.azure.com/";
+  const apiKey = process.env["AZURE_OPENAI_API_KEY"] || "2734tVDESEmiz3FmSHJiJBsrXKBvVDShcKHuHSq10Cu72aY0HrG9JQQJ99BFACHYHv6XJ3w3AAAAACOGggE5";
   const apiVersion = "2025-01-01-preview";
   const deployment = "gpt-4o"; // This must match your deployment name
 
@@ -20,11 +20,11 @@ export async function main() {
       { role: "user", content: "What is so great about #1?" }
     ],
     max_tokens: 800,
-    temperature: 0.7,
-    top_p: 0.95,
-    frequency_penalty: 0,
-    presence_penalty: 0,
-    stop: null
+      temperature: 0.7,
+      top_p: 0.95,
+      frequency_penalty: 0,
+      presence_penalty: 0,
+      stop: null
   });
 
   console.log(JSON.stringify(result, null, 2));
