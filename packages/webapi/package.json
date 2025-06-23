@@ -1,0 +1,39 @@
+{
+  "name": "ai-chat-server",
+  "version": "1.0.0",
+  "description": "AI Chat Server with Azure OpenAI integration",
+  "main": "server.js",
+  "type": "module",
+  "license": "AGPL-3.0",
+  "private": true,
+  "engines": {
+    "node": ">= 14.0.0",
+    "npm": ">= 6.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "echo \"No tests specified\""
+  },
+  "dependencies": {
+    "@azure-rest/ai-inference": "^1.0.0-beta.6",
+    "@azure/core-auth": "^1.9.0",
+    "@langchain/openai": "^0.5.15",
+    "cors": "^2.8.5",
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "langchain": "^0.3.29",
+    "pdf-parse": "^1.1.1"
+  },
+  "author": {
+    "name": "Your Name",
+    "email": "your.email@example.com"
+  },
+  "keywords": [
+    "ai",
+    "chat",
+    "azure",
+    "openai",
+    "express"
+  ]
+}
