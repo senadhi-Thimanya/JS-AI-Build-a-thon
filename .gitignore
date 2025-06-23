@@ -116,3 +116,7 @@ Thumbs.db
 # Build outputs
 build/
 dist/
+
+genaiscript.d.ts
+tsconfig.json
+jsconfig.json
